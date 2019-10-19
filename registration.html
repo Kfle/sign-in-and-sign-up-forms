@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title> Sign Up From </title>
+    <link rel="stylesheet" type="text/css" href="./stylesheet/style.css">   
+</head>
+    <body>
+    <div class="login-box">
+    <img src="images/avatar.png" class="avatar">
+        <h1>Sign Up Here</h1>
+            <form>
+            <p>First Name</p>
+            <input type="text" name="username" placeholder="Enter First Name">
+            <p>Last Name</p>
+            <input type="text" name="lname" placeholder="Enter Last name">
+            <p>Email</p>
+            <input type="text" name="email" placeholder="Enter Email">
+            <p>Mobile Number</p>
+            <input type="text" name="mobile" placeholder="Enter Mobile Number">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password">
+            <p>Confirm Password</p>
+            <input type="password" name="confirm_password" placeholder="Enter Confirm Password"></br>
+            <p class="birth">Bithday:</p>
+            <select name="" id="month1">
+            
+            </select>
+            <select name="" id="date1">
+            
+            </select>
+            <select name="" id="year1">
+            
+            </select></br>
+            <p class="gender">Gender:</p>
+            <table width=30% >
+                <tr >
+                        <td>Male</td>
+                    <td><input type="radio" name="gender" value="male"></td>
+                    
+                </tr>
+                <tr>
+                        <td>Female</td>
+                    <td><input type="radio" name="gender" value="female">
+                   
+                </tr>
+
+            </table>
+
+
+            <input type="submit" name="submit" value="Sign Up">
+            <a href="index.html">Log in</a>    
+            </form>
+             
+            
+            <script>
+                    var month1=document.getElementById("month1");
+                    var date1=document.getElementById("date1");
+                    var year1=document.getElementById("year1");
+            
+                    var months2=["jan","feb","march","apr","may","june","july","aug","sep","oct","nov","dec"];
+                    var x="";
+                    for(i=0;i<12;i++)
+                    {
+                        x+="<option>";
+                        x+=months2[i];
+                        x+="</option>"
+                    }
+                    console.log(x)
+                   month1.innerHTML=x;
+                    var y="";
+                    for(i=1;i<32;i++)
+                    {
+                        y+="<option>";
+                        y+=i;
+                        y+="</option>" 
+                    }
+                    console.log(y);
+                    date1.innerHTML=y;
+            
+            
+                    var z="";
+                    for(i=1905;i<2020;i++)
+                    {
+                        z+="<option>";
+                        z+=i;
+                        z+="</option>" 
+                    }
+                    console.log(z);
+                    year1.innerHTML=z;
+                    
+                   </script>
+                </br></br
+        
+            </div>
+    
+    </body>
+</html>
