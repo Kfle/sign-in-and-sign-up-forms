@@ -1,12 +1,13 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(/./images/web.jpg);
+    background: url(/./images/images.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     font-family: sans-serif;
 }
+
 .login-box{
     width: 320px;
     height:420px;
@@ -54,6 +55,14 @@ h1{
     height: 40px;
     color: #fff;
     font-size: 16px;
+}
+.login-box input[type="text"]::placeholder
+{
+color: gold;
+}
+.login-box input[type="password"]::placeholder
+{
+color: gold;
 }
 .login-box input[type="submit"]
 {
